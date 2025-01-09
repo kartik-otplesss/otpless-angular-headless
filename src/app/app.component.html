@@ -1,0 +1,30 @@
+<div class="wrapper">
+  <h1 class="tag-line">OTPLess</h1>
+  <div class="login-section">
+      <div class="input-section">
+          <input type="text" name="" id="input-value" placeholder="Enter Your Email" class="input-email" [(ngModel)]="inputMobile" (input)="onInput()">
+      </div>
+      <div class="otp-section" id="otp-section" >
+          <input type="text" placeholder="Enter Your OTP" class="input-otp" id='input-otp'
+          [(ngModel)]="otpInput" (input)="onOtpInput()">
+      </div>
+
+      <div class="button-section">
+          <button class="send-otp-btn" id="send-otp" (click)="continue()">Continue</button>
+          <button class="verify-otp-btn"  id="verify-otp" (click)="verify()">Verify</button>
+      </div>
+  </div>
+  <h1 class="login-option-or">OR</h1>
+
+
+
+  <div class="social-container">
+      <button class="whatspp-btn"  onclick="oauth('WHATSAPP')">Continue With WhatsApp</button>
+      <button  class="google-btn"  onclick="oauth('GMAIL')">Continue With Google</button>
+  </div>
+
+  <div class="error-container" id="error">
+      <h1 class="error-name"> Error Name</h1>
+  </div>
+</div>
+<router-outlet />

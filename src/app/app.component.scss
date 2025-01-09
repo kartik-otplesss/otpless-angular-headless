@@ -1,0 +1,190 @@
+*{
+  margin: 0;
+  padding: 0;
+  font-family: 'Poppins', sans-serif;
+  box-sizing: border-box;
+}
+body{
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  margin: 0;
+  color: #e0e0e0;
+  background-image: radial-gradient(circle at 25% 25%, rgba(166, 86, 246, 0.1) 2%, transparent 0%), radial-gradient(circle at 75% 75%, rgba(102, 101, 241, 0.1) 2%, transparent 0%);
+  background-size: 60px 60px;
+}
+.wrapper{
+  padding: 3rem;
+  border-radius: 16px;
+  box-shadow: 0 8px 32px rgba(0, 0, 0, 0.3);
+  text-align: center;
+  backdrop-filter: blur(10px);
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  width: 400px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+  gap: 10px;
+}
+.tag-line{
+  margin-bottom: 1.5rem;
+  color:  rgb(48, 98, 212);
+  font-weight: 600;
+  font-size: 2rem;
+}
+.login-section{
+  width:100%;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+.input-section{
+width: 100%;
+}
+.input-email{
+  font-size: 16px;
+  border-radius: 12px;
+  padding: 16px;
+  width: 100%;
+  outline: none;
+  border: 1px solid black;
+}
+.otp-section{
+
+  display: none;
+
+}
+.input-otp{
+  font-size: 16px;
+  border-radius: 12px;
+  padding: 16px;
+  width: 100%;
+  outline: none;
+  border: 1px solid black;
+}
+.button-section{
+  width:100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 10px;
+}
+.send-otp-btn{
+      width: 300px;
+      opacity: 1;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      padding: 16px;
+      border-radius: 12px;
+      position: relative;
+      flex-wrap: nowrap;
+      gap: 8px;
+      transition: 0.25s ease-in-out;
+      background: rgb(48, 98, 212);
+      border: 1px solid rgb(48, 98, 212);
+      -webkit-tap-highlight-color: transparent;
+      overflow: hidden;
+      color: rgb(255, 255, 255);
+      font-size: 16px;
+      cursor: pointer;
+}
+
+
+.send-otp-btn:disabled,
+.send-otp-btn[disabled]{
+background-color:    rgb(77, 112, 194);
+}
+
+
+.verify-otp-btn{
+  display: none;
+  width: 300px;
+  opacity: 1;
+  align-items: center;
+  justify-content: center;
+  padding: 16px;
+  border-radius: 12px;
+  position: relative;
+  flex-wrap: nowrap;
+  gap: 8px;
+  transition: 0.25s ease-in-out;
+  background: rgb(48, 98, 212);
+  border: 1px solid rgb(48, 98, 212);
+  -webkit-tap-highlight-color: transparent;
+  overflow: hidden;
+  color: rgb(255, 255, 255);
+  font-size: 16px;
+  cursor: pointer;
+
+}
+
+.verify-otp-btn:disabled,
+.verify-otp-btn[disabled]{
+background-color:    rgb(77, 112, 194);
+}
+
+
+.login-option-or{
+  font-size: 14px;
+  font-weight: 400;
+  color: gray;
+}
+
+.social-container{
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+.whatspp-btn{
+  width: 100%;
+  opacity: 1;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 12px;
+  border-radius: 12px;
+  position: relative;
+  flex-wrap: nowrap;
+  gap: 8px;
+  transition: 0.25s ease-in-out;
+  background: rgb(255, 255, 255);
+  border: 1px solid rgb(201, 202, 206);
+  font-size: 16px;
+  max-height: 53.5px;
+  cursor: pointer;
+}
+.google-btn{
+  width: 100%;
+  opacity: 1;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 12px;
+  border-radius: 12px;
+  position: relative;
+  flex-wrap: nowrap;
+  gap: 8px;
+  transition: 0.25s ease-in-out;
+  background: rgb(255, 255, 255);
+  border: 1px solid rgb(201, 202, 206);
+  font-size: 16px;
+  max-height: 53.5px;
+  cursor: pointer;
+}
+
+.error-container{
+  display: none;
+}
+.error-name   {
+  font-size: 18px;
+  font-weight: 100;
+  color: red;
+}
+.send-timer {
+  display: none;
+}
